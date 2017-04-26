@@ -181,3 +181,8 @@ require get_parent_theme_file_path( '/inc/stylizer_comment_walker.php' );
  * Custom comment form.
  */
 require get_parent_theme_file_path( '/inc/stylizer_comment_form.php' );
+
+/**
+ * Create custom post types
+ */
+require get_parent_theme_file_path( '/inc/fourohfive_custom_post_types.php' );
