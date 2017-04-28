@@ -33,25 +33,35 @@
         get_the_title()
       ) );
 
-      $email = get_field('contributor_email');
-      echo '<h2>Contributors</h2>';
-      echo '<p>'. the_field('contributor_name') .'</p>';
-      echo '<p><a href="mailto:'. $email .'">Email</a></p>';
-  
-
-      if(get_field('contributor_website'))
-      {
-        echo '<p><a href="http://'. $url .'">Website</a></p>';
-      }
-
-      if(get_field('contributor_photo'))
-      {
-        echo '<img src="' . get_field('contributor_photo') . '">';
-      }
 
 
+     $images = get_field('gallery');
+
+            if( $images ): ?>
+
+                <div id="slider" class="flexslider">
+                    <ul class="slides">
+                        <?php foreach( $images as $image ): ?>
+                            <li>
+                                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                                <p><?php echo $image['caption']; ?></p>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+                <div id="carousel" class="flexslider">
+                    <ul class="slides">
+                        <?php foreach( $images as $image ): ?>
+                            <li>
+                                <img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" />
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div> 
+                <?php endif; ?>   
 
 
+<?php
       wp_link_pages( array(
         'before'      => '<div class="page-links">' . __( 'Pages:', 'four-oh-five' ),
         'after'       => '</div>',

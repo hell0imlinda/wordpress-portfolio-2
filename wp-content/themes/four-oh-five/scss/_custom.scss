@@ -2,3 +2,11 @@
 //
 // Copy variables from `_variables.scss` to this file to override default values
 // without modifying source files.
+
+$purple: #BB64F9; 
+
+$brand-primary: $purple;
+
+.footer-color{
+	background-color: $brand-primary;
+}

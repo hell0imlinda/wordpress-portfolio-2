@@ -13,13 +13,13 @@
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(' mb-4'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('container card mb-4'); ?>>
 
 
 
-	<div class="-block">
-		<?php the_title( '<h1 class="-title display-4">', '</h1>' ); ?>
-		<h2 class="-subtitle h6 mb-4 text-muted"><?php the_author(); ?> on <?php the_time('F jS, Y') ?></h2>
+	<div class="card-block">
+		<?php the_title( '<h1 class="card-title display-4">', '</h1>' ); ?>
+		<h2 class="container card-subtitle h6 mb-4 text-muted"><?php the_author(); ?> on <?php the_time('F jS, Y') ?></h2>
 
 		<?php
 			the_content( sprintf(

@@ -1,0 +1,38 @@
+/* line 21, style.scss */
+.flexslider {
+  .border-width: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none; }
+  /* line 25, style.scss */
+  .flexslider .slides li {
+    margin-left: 0;
+    margin-right: 0; }
+  /* line 29, style.scss */
+  .flexslider .slides img {
+    max-width: 100%; }
+
+/* line 35, style.scss */
+.flex-direction-nav li {
+  list-style: none; }
+/* line 38, style.scss */
+.flex-direction-nav a:before {
+  line-height: 1; }
+
+/* line 42, style.scss */
+.flex-slide {
+  position: relative; }
+
+/* line 46, style.scss */
+.flex-caption {
+  right: 0;
+  padding: 10px;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  position: absolute; }
+  /* line 55, style.scss */
+  .flex-caption .gallery-content {
+    opacity: .7; }
+
+/*# sourceMappingURL=style.css.map */

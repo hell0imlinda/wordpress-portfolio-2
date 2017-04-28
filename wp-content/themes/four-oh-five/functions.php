@@ -148,6 +148,7 @@ function fourohfive_scripts() {
 
   // Load the html5 shiv.
   wp_enqueue_script( 'html5', get_theme_file_uri( '/assets/js/html5.js' ), array(), '3.7.3' );
+  wp_enqueue_script( 'flexslider', get_theme_file_uri( '/assets/js/jquery.flexslider-min.js' ), array() );
   wp_script_add_data( 'html5', 'conditional', 'lt IE 9' );
 
   // Load threaded comments reply
