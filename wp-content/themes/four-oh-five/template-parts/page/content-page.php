@@ -13,7 +13,7 @@
 ?>
 
 <?php if ( has_post_thumbnail() && ( is_single() || ( is_page() && ! fourohfive_is_frontpage() ) ) ) : ?>
-	<div style="background: url(<?php the_post_thumbnail_url( 'full' ); ?>) center center no-repeat; background-size: cover; -webkit-transform: translate3d(0,0,0); translate3d(0,0,0); background-attachment: fixed; height: 50vh;">
+	<div style="background: url(<?php the_post_thumbnail_url( 'full' ); ?>) center center no-repeat; background-size: cover; -webkit-transform: translate3d(0,0,0); translate3d(0,0,0); background-attachment: fixed; height: 100vh;">
 	</div>
 <?php endif; ?>
 
@@ -22,7 +22,7 @@
 		<header>
 			<?php the_title( '<h1 class="display-4">', '</h1>' ); ?>
 		</header>
-		<div class="card entry-content">
+		<div class=" entry-content">
 			<?php
 				the_content();
 

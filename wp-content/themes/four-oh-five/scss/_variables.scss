@@ -98,7 +98,7 @@ $red:    #d00d2d !default;
 $orange: #f0ad4e !default;
 $yellow: #ffd500 !default;
 $green:  #5cb85c !default;
-$blue:   #0275d8 !default;
+$blue:   #009bb8 !default;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
 $purple: #BB64F9 !default;
@@ -111,7 +111,7 @@ $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
 
 // Reassign color vars to semantic color scheme
-$brand-primary:             $purple !default;
+$brand-primary:             $blue !default;
 $brand-success:             $green !default;
 $brand-info:                $teal !default;
 $brand-warning:             $orange !default;

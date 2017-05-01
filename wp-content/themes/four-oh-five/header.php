@@ -38,7 +38,7 @@
 						<?php the_custom_header_markup(); ?>
 					</div>
 				<?php else : ?>
-					<div style="background: url(<?php header_image(); ?>) center center no-repeat; background-size: cover; -webkit-transform: translate3d(0,0,0); translate3d(0,0,0); background-attachment: fixed; height: 50vh;"></div>
+					<img class="img-fluid" src="<?php header_image(); ?>" alt="">
 				<?php endif; ?>
 			<?php endif; ?>
 		<?php endif; ?>
