@@ -14,13 +14,13 @@ get_header(); ?>
 
 	<header>
 		<?php if ( '' !== get_the_post_thumbnail() ) : ?>
-			<div class="card-img-top img-fluid p-4">
+			<div class="card-img-top img-fluid p-4 ml-10 mr-10">
 				<?php the_post_thumbnail( 'fourohfive-featured-image', array( 'class' => 'img-fluid' ) ); ?>
 			</div>
 		<?php endif; ?>
 	</header>
 
-<div class="card container py-4">
+<div class="container py-4 p-4">
 	<div >
 
 		<div 
